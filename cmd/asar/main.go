@@ -1,12 +1,13 @@
-package main // import "github.com/jaygooby/asar"
+package main // import "github.com/jheuel/asar"
 
 import (
 	"flag"
 	"fmt"
-	"os"
 	"io/ioutil"
+	"os"
 	"path/filepath"
-	"github.com/jaygooby/asar"
+
+	"github.com/jheuel/asar"
 )
 
 func main() {
@@ -158,7 +159,7 @@ func openFile(file string) *os.File {
 }
 
 func check(e error) {
-  if e != nil {
-    panic(e)
-  }
+	if e != nil {
+		panic(e)
+	}
 }
